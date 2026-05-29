@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-japan-white text-japan-black font-body overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(253, 251, 247, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(188, 0, 45, 0.1);
+  }
+  
+  .glass-dark {
+    background: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(188, 0, 45, 0.2);
+  }
+  
+  .sakura-bg {
+    background: radial-gradient(circle at 20% 50%, rgba(188,0,45,0.03) 0%, transparent 50%);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F0E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BC002D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B0020;
+}
