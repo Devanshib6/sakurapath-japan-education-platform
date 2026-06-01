@@ -33,7 +33,7 @@ const SakuraBlossom = () => {
       {petals.map((petal) => (
         <motion.div
           key={petal.id}
-          className="absolute text-japan-red/20"
+          className="absolute text-primary-blue/20"
           style={{
             left: `${petal.left}%`,
             top: '-20px',

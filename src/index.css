@@ -18,17 +18,17 @@
   .glass {
     background: rgba(253, 251, 247, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(188, 0, 45, 0.1);
+    border: 1px solid rgba(8, 119, 186, 0.1);
   }
   
   .glass-dark {
     background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(188, 0, 45, 0.2);
+    border: 1px solid rgba(8, 119, 186, 0.2);
   }
   
   .sakura-bg {
-    background: radial-gradient(circle at 20% 50%, rgba(188,0,45,0.03) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 50%, rgba(8, 119, 186, 0.03) 0%, transparent 50%);
   }
 }
 
@@ -41,10 +41,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #BC002D;
+  background: #0877BA;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8B0020;
+  background: #065a8c;
 }

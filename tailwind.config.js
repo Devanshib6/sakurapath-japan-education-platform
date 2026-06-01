@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'japan-red': '#BC002D',
+        'primary-blue': '#0877BA',
+        'accent-yellow': '#F6C21F',
         'japan-white': '#FDFBF7',
         'japan-cream': '#F5F0E8',
         'japan-black': '#1A1A1A',
@@ -21,7 +22,6 @@ export default {
       animation: {
         'float': 'float 6s ease-in-out infinite',
         'marquee': 'marquee 25s linear infinite',
-        'marquee2': 'marquee2 25s linear infinite',
       },
       keyframes: {
         float: {
@@ -29,12 +29,8 @@ export default {
           '50%': { transform: 'translateY(-20px)' },
         },
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
-        marquee2: {
           '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
     },

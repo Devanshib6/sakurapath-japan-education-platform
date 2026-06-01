@@ -64,7 +64,7 @@ const PopularTours = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-japan-red font-semibold text-sm uppercase tracking-wider mb-2 block">
+          <span className="text-primary-blue font-semibold text-sm uppercase tracking-wider mb-2 block">
             POPULAR PROGRAMS
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -92,29 +92,29 @@ const PopularTours = () => {
                   alt={tour.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
-                <div className="absolute top-4 right-4 bg-japan-red text-white px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute top-4 right-4 bg-primary-blue text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {tour.price}
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{tour.title}</h3>
                 <div className="flex items-center gap-2 text-gray-600 mb-2">
-                  <MapPin size={16} className="text-japan-red" />
+                  <MapPin size={16} className="text-primary-blue" />
                   <span className="text-sm">{tour.location}</span>
-                  <Clock size={16} className="text-japan-red ml-2" />
+                  <Clock size={16} className="text-primary-blue ml-2" />
                   <span className="text-sm">{tour.duration}</span>
                 </div>
                 <div className="mb-4">
                   <p className="text-sm text-gray-600 mb-1">Partner Universities:</p>
                   <div className="flex flex-wrap gap-1">
                     {tour.universities.map((uni, i) => (
-                      <span key={i} className="text-xs bg-japan-red/10 text-japan-red px-2 py-1 rounded">
+                      <span key={i} className="text-xs bg-primary-blue/10 text-primary-blue px-2 py-1 rounded">
                         {uni}
                       </span>
                     ))}
                   </div>
                 </div>
-                <button className="w-full bg-japan-red text-white py-2 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 flex items-center justify-center gap-2 group">
+                <button className="w-full bg-primary-blue text-white py-2 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 flex items-center justify-center gap-2 group">
                   Apply Now
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </button>

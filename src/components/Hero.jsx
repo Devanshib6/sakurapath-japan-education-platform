@@ -21,7 +21,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-2 bg-japan-red/10 text-japan-red rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
+            <span className="inline-block px-4 py-2 bg-primary-blue/10 text-primary-blue rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
               ✨ STUDY & TRAVEL
             </span>
           </motion.div>
@@ -34,9 +34,9 @@ const Hero = () => {
           >
             <span className="text-japan-black">EXPLORE</span>
             <br />
-            <span className="text-japan-red">THE LAND OF</span>
+            <span className="text-primary-blue">THE LAND OF</span>
             <br />
-            <span className="bg-gradient-to-r from-japan-red to-japan-dark bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-blue to-accent-yellow bg-clip-text text-transparent">
               THE RISING SUN
             </span>
           </motion.h1>
@@ -56,11 +56,11 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
-            <button className="group bg-japan-red text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 flex items-center justify-center gap-2">
+            <button className="group bg-primary-blue text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 flex items-center justify-center gap-2">
               Start Your Journey
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </button>
-            <button className="border-2 border-japan-red text-japan-red px-8 py-4 rounded-full text-lg font-semibold hover:bg-japan-red hover:text-white transition-all duration-300">
+            <button className="border-2 border-primary-blue text-primary-blue px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-blue hover:text-white transition-all duration-300">
               Explore Programs
             </button>
           </motion.div>
@@ -72,17 +72,17 @@ const Hero = () => {
             className="grid grid-cols-3 gap-4 max-w-2xl mx-auto glass rounded-2xl p-6"
           >
             <div className="text-center">
-              <MapPin className="text-japan-red mx-auto mb-2" size={24} />
+              <MapPin className="text-primary-blue mx-auto mb-2" size={24} />
               <p className="text-sm font-semibold">300+</p>
               <p className="text-xs text-japan-black/60">Universities</p>
             </div>
             <div className="text-center">
-              <Calendar className="text-japan-red mx-auto mb-2" size={24} />
+              <Calendar className="text-primary-blue mx-auto mb-2" size={24} />
               <p className="text-sm font-semibold">98%</p>
               <p className="text-xs text-japan-black/60">Success Rate</p>
             </div>
             <div className="text-center">
-              <Users className="text-japan-red mx-auto mb-2" size={24} />
+              <Users className="text-primary-blue mx-auto mb-2" size={24} />
               <p className="text-sm font-semibold">40K+</p>
               <p className="text-xs text-japan-black/60">Students</p>
             </div>
@@ -94,7 +94,7 @@ const Hero = () => {
             transition={{ delay: 1 }}
             className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
           >
-            <ChevronDown className="text-japan-red w-6 h-6 animate-bounce" />
+            <ChevronDown className="text-primary-blue w-6 h-6 animate-bounce" />
           </motion.div>
         </div>
       </div>

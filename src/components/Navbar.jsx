@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Compass, ChevronDown } from 'lucide-react';
+import { Menu, X, Compass } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -31,9 +31,9 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-2 cursor-pointer"
           >
-            <Compass className="text-japan-red w-8 h-8" />
+            <Compass className="text-primary-blue w-8 h-8" />
             <span className="text-2xl font-bold tracking-tight">
-              <span className="text-japan-red">Sakura</span>
+              <span className="text-primary-blue">Sakura</span>
               <span className="text-japan-black">Path</span>
             </span>
           </motion.div>
@@ -46,10 +46,10 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-japan-dark hover:text-japan-red transition-colors duration-300 font-medium relative group"
+                className="text-japan-dark hover:text-primary-blue transition-colors duration-300 font-medium relative group"
               >
                 {link}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-japan-red transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-blue transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
             ))}
           </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block bg-japan-red text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-medium"
+            className="hidden md:block bg-primary-blue text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 font-medium"
           >
             Apply Now
           </motion.button>
@@ -86,12 +86,12 @@ const Navbar = () => {
                   key={link}
                   href={`#${link.toLowerCase()}`}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-japan-white text-xl hover:text-japan-red transition-colors"
+                  className="text-japan-white text-xl hover:text-primary-blue transition-colors"
                 >
                   {link}
                 </a>
               ))}
-              <button className="bg-japan-red text-white px-6 py-3 rounded-full font-medium mt-4">
+              <button className="bg-primary-blue text-white px-6 py-3 rounded-full font-medium mt-4">
                 Apply Now
               </button>
             </div>

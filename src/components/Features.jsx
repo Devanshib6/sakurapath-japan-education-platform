@@ -46,7 +46,7 @@ const Features = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-japan-red font-semibold text-sm uppercase tracking-wider mb-2 block">
+          <span className="text-primary-blue font-semibold text-sm uppercase tracking-wider mb-2 block">
             WHY STUDY IN JAPAN
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -66,9 +66,9 @@ const Features = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -5 }}
-              className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-japan-red/10"
+              className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-primary-blue/10"
             >
-              <div className="text-japan-red mb-4 flex justify-center">
+              <div className="text-primary-blue mb-4 flex justify-center">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
